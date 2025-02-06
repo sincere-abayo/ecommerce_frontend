@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-2xl">Customer Orders</h1>
+    </header>
+    <main class="p-4">
+        <h2 class="text-xl">Manage Orders</h2>
+        <table class="min-w-full border">
+            <thead>
+                <tr>
+                    <th class="border px-4 py-2">Order ID</th>
+                    <th class="border px-4 py-2">Customer</th>
+                    <th class="border px-4 py-2">Status</th>
+                    <th class="border px-4 py-2">Total Amount</th>
+                    <th class="border px-4 py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">#12345</td>
+                    <td class="border px-4 py-2">John Doe</td>
+                    <td class="border px-4 py-2">Completed</td>
+                    <td class="border px-4 py-2">$100.00</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">View</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">#12346</td>
+                    <td class="border px-4 py-2">Jane Smith</td>
+                    <td class="border px-4 py-2">Pending</td>
+                    <td class="border px-4 py-2">$50.00</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">View</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Cancel</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 E-commerce Website</p>
+    </footer>
+</body>
+</html>

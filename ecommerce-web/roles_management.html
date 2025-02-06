@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-2xl">Roles Management</h1>
+    </header>
+    <main class="p-4">
+        <h2 class="text-xl">Manage Roles</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 mb-4">Create New Role</button>
+        <table class="min-w-full border">
+            <thead>
+                <tr>
+                    <th class="border px-4 py-2">Role Name</th>
+                    <th class="border px-4 py-2">Permissions</th>
+                    <th class="border px-4 py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Admin</td>
+                    <td class="border px-4 py-2">All Access</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Employee</td>
+                    <td class="border px-4 py-2">Limited Access</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Customer</td>
+                    <td class="border px-4 py-2">View Products</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 E-commerce Website</p>
+    </footer>
+</body>
+</html>

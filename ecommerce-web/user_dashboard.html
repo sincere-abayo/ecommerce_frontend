@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <aside class="w-64 h-screen bg-gray-800 text-white p-4">
+            <h2 class="text-2xl mb-4">Dashboard</h2>
+            <nav>
+                <ul>
+                    <li class="mb-2"><a href="user_dashboard.html" class="hover:underline">Dashboard</a></li>
+                    <li class="mb-2"><a href="user_management.html" class="hover:underline">User Management</a></li>
+                    <li class="mb-2"><a href="product_list.html" class="hover:underline">Products</a></li>
+                    <li class="mb-2"><a href="customer_list.html" class="hover:underline">Customers</a></li>
+                    <li class="mb-2"><a href="customer_orders.html" class="hover:underline">Orders</a></li>
+                    <li class="mb-2"><a href="payments.html" class="hover:underline">Payments</a></li>
+                    <li class="mb-2"><a href="delivery_list.html" class="hover:underline">Deliveries</a></li>
+                    <li class="mb-2"><a href="dashboard_reports.html" class="hover:underline">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="flex-1 p-4">
+            <header class="bg-white shadow-md rounded p-4 mb-4">
+                <h1 class="text-2xl">Welcome, John Doe!</h1>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-lg">Total Sales</h3>
+                    <p class="text-2xl">$10,000</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-lg">Pending Orders</h3>
+                    <p class="text-2xl">5</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-lg">Low Stock Alerts</h3>
+                    <p class="text-2xl">2 Products</p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg">Recent Activities</h3>
+                <ul class="list-disc pl-5" id="recent-activities">
+                    <li>Order #12345 placed on 2023-10-01</li>
+                    <li>Stock updated for Product A on 2023-10-02</li>
+                    <li>User Jane Smith created on 2023-10-03</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg">Orders Overview</h3>
+                <table class="min-w-full border" id="orders-overview">
+                    <thead>
+                        <tr>
+                            <th class="border px-4 py-2">Order ID</th>
+                            <th class="border px-4 py-2">Customer</th>
+                            <th class="border px-4 py-2">Status</th>
+                            <th class="border px-4 py-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-body">
+                        <tr>
+                            <td class="border px-4 py-2">#12345</td>
+                            <td class="border px-4 py-2">John Doe</td>
+                            <td class="border px-4 py-2">Completed</td>
+                            <td class="border px-4 py-2">$100.00</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">#12346</td>
+                            <td class="border px-4 py-2">Jane Smith</td>
+                            <td class="border px-4 py-2">Pending</td>
+                            <td class="border px-4 py-2">$50.00</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">#12347</td>
+                            <td class="border px-4 py-2">Alice Johnson</td>
+                            <td class="border px-4 py-2">Canceled</td>
+                            <td class="border px-4 py-2">$75.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 fixed bottom-0 w-full text-white p-4 text-center">
+        <p>© 2023 E-commerce Website</p>
+    </footer>
+</body>
+</html>

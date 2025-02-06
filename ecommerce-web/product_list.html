@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-2xl">Product List</h1>
+    </header>
+    <main class="p-4">
+        <h2 class="text-xl">Manage Products</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 mb-4">Add New Product</button>
+        <table class="min-w-full border">
+            <thead>
+                <tr>
+                    <th class="border px-4 py-2">Product Name</th>
+                    <th class="border px-4 py-2">Status</th>
+                    <th class="border px-4 py-2">Created Date</th>
+                    <th class="border px-4 py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Product A</td>
+                    <td class="border px-4 py-2">Available</td>
+                    <td class="border px-4 py-2">2023-10-01</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Product B</td>
+                    <td class="border px-4 py-2">Unavailable</td>
+                    <td class="border px-4 py-2">2023-10-02</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Product C</td>
+                    <td class="border px-4 py-2">Available</td>
+                    <td class="border px-4 py-2">2023-10-03</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-yellow-500 text-white px-2 py-1">Edit</button>
+                        <button class="bg-red-500 text-white px-2 py-1">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 E-commerce Website</p>
+    </footer>
+</body>
+</html>
