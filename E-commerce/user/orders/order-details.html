@@ -12,26 +12,78 @@
     <div class="flex">
         <!-- Sidebar -->
         <aside class="fixed top-0 left-0 h-screen w-64 bg-white shadow-lg">
-            <!-- Sidebar content -->
+            <div class="p-4">
+                <h1 class="text-2xl font-bold text-gray-800">E-commerce</h1>
+            </div>
+            <nav class="mt-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="../index.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-home mr-3"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../products/products-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-box mr-3"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../orders/orders-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-shopping-cart mr-3"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../customers/customers-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-users mr-3"></i>
+                            Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../payments/payments-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-credit-card mr-3"></i>
+                            Payments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../shipping/shipping-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-truck mr-3"></i>
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../reports/sales-reports.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
         </aside>
 
         <!-- Main Content -->
         <main class="ml-64 flex-1 p-8">
             <!-- Header -->
             <div class="flex justify-between items-center mb-6">
-                <div>
-                    <h1 class="text-2xl font-bold text-gray-800">Order #ORD-2023001</h1>
-                    <p class="text-gray-600">Placed on Oct 25, 2023 at 14:30</p>
-                </div>
+                <h1 class="text-2xl font-bold text-gray-800">Orders</h1>
                 <div class="flex space-x-4">
-                    <button class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600">
-                        <i class="fas fa-print mr-2"></i>Print Order
-                    </button>
-                    <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-                        <i class="fas fa-edit mr-2"></i>Edit Order
+                    <a href="order-details.html" 
+                        class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                        <i class="fas fa-info-circle mr-2"></i>Order Details
+                    </a>
+                    <a href="invoice.html" 
+                        class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600">
+                        <i class="fas fa-file-invoice mr-2"></i>View Invoice
+                    </a>
+                    <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                        <i class="fas fa-file-export mr-2"></i>Export Orders
                     </button>
                 </div>
             </div>
+            
 
             <div class="grid grid-cols-3 gap-6">
                 <!-- Order Summary -->
@@ -52,7 +104,7 @@
                                 <tr class="border-b">
                                     <td class="py-4">
                                         <div class="flex items-center">
-                                            <img src="https://via.placeholder.com/50" alt="Product" class="w-12 h-12 rounded">
+                                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df" alt="Product" class="w-12 h-12 rounded">
                                             <div class="ml-4">
                                                 <div class="font-medium">iPhone 13 Pro</div>
                                                 <div class="text-sm text-gray-500">SKU: IP13-PRO-256</div>
